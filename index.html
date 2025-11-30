@@ -316,6 +316,7 @@
       padding:1.6rem 1.4rem 1.4rem;
       position:relative;
       overflow:hidden;
+      color:var(--deep-blue);
     }
 
     .hero-card::before{
@@ -371,6 +372,7 @@
       padding:0.18rem 0.7rem;
       border:1px solid #eedcff;
       white-space:nowrap;
+      color:var(--deep-blue);
     }
 
     .service-mini-grid{
@@ -398,6 +400,10 @@
 
     .hero-card-footer strong{
       color:var(--deep-blue);
+    }
+    .hero-card-footer a{
+      color:var(--deep-blue);
+      font-weight:700;
     }
 
     /* ---------- Services ---------- */
@@ -670,6 +676,20 @@
       min-height:100px;
     }
 
+    .radio-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.8rem;
+      font-size:0.86rem;
+    }
+
+    .radio-row label{
+      display:flex;
+      align-items:center;
+      gap:0.3rem;
+      cursor:pointer;
+    }
+
     .small-note{
       font-size:0.78rem;
       color:#777;
@@ -726,6 +746,27 @@
         padding-inline:1rem;
       }
 
+      .container{
+        padding-inline:1rem;
+      }
+
+      .hero{
+        padding-top:1.8rem;
+      }
+
+      .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .hero-actions{
+        justify-content:center;
+      }
+
+      .hero-info-row{
+        justify-content:center;
+      }
+
       nav ul{
         position:absolute;
         top:56px;
@@ -775,6 +816,8 @@
 
       .hero-card{
         margin-top:0.5rem;
+        padding:1.4rem 1.1rem;
+        backdrop-filter:blur(6px);
       }
 
       .services-grid,
@@ -805,6 +848,19 @@
         flex-direction:column;
         gap:0.8rem;
       }
+
+      .chip-row{
+        justify-content:center;
+      }
+
+      .service-mini-grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero-card{
+        padding:1.2rem 1rem;
+        border-radius:18px;
+      }
     }
 
   </style>
@@ -834,7 +890,7 @@
       <div class="nav-actions">
         <div class="phone">
           <span>হেড অফিস: 01617-723455</span>
-          <small>ব্রাঞ্চ: 01618-501670</small>
+          <small>সার্ভিস সাপোর্ট: 01618-501670</small>
         </div>
         <button class="btn btn-outline" onclick="window.location.href='tel:01617723455'">
           <i class="fa-solid fa-phone-volume"></i> কল করুন
@@ -927,7 +983,7 @@
         <div class="hero-card-footer">
           <div>
             <strong>হেড অফিস:</strong> 01617-723455<br>
-            <strong>ব্রাঞ্চ অফিস:</strong> 01618-501670
+            <strong>সার্ভিস অফিস:</strong> 01618-501670
           </div>
           <div>
             <strong>ওয়েব:</strong><br>
@@ -1044,7 +1100,7 @@
         <div class="why-card-icon"><i class="fa-solid fa-location-dot"></i></div>
         <h3>দুই অফিস থেকে সার্ভিস</h3>
         <p>
-          হেড অফিস ও ব্রাঞ্চ অফিস – উভয় স্থান থেকেই সার্ভিস দেওয়া হয়,
+          হেড অফিস ও সার্ভিস অফিস – উভয় স্থান থেকেই সার্ভিস দেওয়া হয়,
           যাতে দ্রুত সময়ে আপনার লোকেশনে পৌঁছানো সম্ভব হয়।
         </p>
       </div>
@@ -1056,14 +1112,14 @@
 <section id="contact">
   <div class="container">
     <div class="section-title">
-      <h2>যোগাযোগ করুন</h2>
-      <p>যেকোন কাজের জন্য কল, এসএমএস বা অনলাইন মেসেজ পাঠিয়ে বুকিং দিতে পারেন।</p>
+      <h2>ভর্তি আবেদন</h2>
+      <p>যোগাযোগ ফর্মের বদলে ভর্তি আবেদন ফর্ম যুক্ত করা হয়েছে। অনুগ্রহ করে প্রয়োজনীয় তথ্য পূরণ করুন।</p>
     </div>
 
     <div class="contact-wrapper">
       <!-- Info -->
       <div class="contact-card">
-        <h3>অফিস ঠিকানা & ফোন</h3>
+        <h3>অফিস ঠিকানা ও হেল্পলাইন</h3>
 
         <div class="office-grid">
           <div class="office-item">
@@ -1074,17 +1130,17 @@
           </div>
 
           <div class="office-item">
-            <h4>ব্রাঞ্চ অফিস</h4>
+            <h4>সার্ভিস অফিস</h4>
             <p><i class="fa-solid fa-phone"></i> 01618-501670</p>
             <p><i class="fa-solid fa-envelope"></i> support@sadik.net.bd (ঐচ্ছিক)</p>
-            <p><i class="fa-solid fa-location-dot"></i> ব্রাঞ্চের ঠিকানা এখানে যোগ করুন</p>
+            <p><i class="fa-solid fa-location-dot"></i> সার্ভিস অফিসের ঠিকানা এখানে যোগ করুন</p>
           </div>
         </div>
 
         <div class="contact-phones">
           <strong>যেকোন জরুরি কাজের জন্য সরাসরি কল করুন:</strong><br>
           হেড অফিস: <a href="tel:01617723455">01617-723455</a><br>
-          ব্রাঞ্চ অফিস: <a href="tel:01618501670">01618-501670</a>
+          সার্ভিস অফিস: <a href="tel:01618501670">01618-501670</a>
         </div>
 
         <div class="web-links">
@@ -1093,38 +1149,68 @@
         </div>
       </div>
 
-      <!-- Form (front-end only) -->
+      <!-- Admission Form (front-end only) -->
       <div class="contact-form-card">
-        <h3>অনলাইন মেসেজ পাঠান</h3>
-        <p>নিচের ফরমটি পূরণ করে আপনার কাজের বিবরণ পাঠালে আমরা ফোন করে যোগাযোগ করব।</p>
+        <h3>ভর্তি আবেদন ফর্ম</h3>
+        <p>অভিভাবক বা শিক্ষার্থী যেই হোন, ভর্তি প্রক্রিয়ার জন্য প্রয়োজনীয় তথ্য ও ডকুমেন্ট আপলোড করুন।</p>
 
-        <form onsubmit="event.preventDefault(); alert('ধন্যবাদ! আপনার মেসেজ রিসিভ হয়েছে। আমরা দ্রুত যোগাযোগ করব।');">
+        <form id="admissionForm" novalidate>
           <div class="form-group">
-            <label for="name">নাম</label>
-            <input id="name" type="text" placeholder="আপনার নাম লিখুন" required>
+            <label for="applicantName">আবেদনকারীর নাম</label>
+            <input id="applicantName" type="text" placeholder="পুরো নাম লিখুন" required>
           </div>
 
           <div class="form-group">
             <label for="phone">মোবাইল নাম্বার</label>
-            <input id="phone" type="tel" placeholder="আপনার মোবাইল নাম্বার" required>
+            <input id="phone" type="tel" placeholder="১১ ডিজিট মোবাইল নাম্বার" required>
           </div>
 
           <div class="form-group">
-            <label for="service">যে সেবাটি চান</label>
-            <input id="service" type="text" placeholder="যেমন: এসি ইনস্টলেশন, গ্যাস লাইন, রং ইত্যাদি">
+            <label for="email">ইমেইল (ঐচ্ছিক)</label>
+            <input id="email" type="email" placeholder="example@mail.com">
           </div>
 
           <div class="form-group">
-            <label for="message">কাজের বিস্তারিত</label>
-            <textarea id="message" placeholder="লোকেশন, কাজের ধরন, সময় – যতটুকু সম্ভব লিখুন"></textarea>
+            <label>আবেদনকারীর ধরন</label>
+            <div class="radio-row">
+              <label><input type="radio" name="applicant_type" value="guardian" checked> অভিভাবক</label>
+              <label><input type="radio" name="applicant_type" value="student"> শিক্ষার্থী</label>
+            </div>
           </div>
+
+          <div class="form-group">
+            <label for="studentName">শিক্ষার্থীর নাম</label>
+            <input id="studentName" type="text" placeholder="শিক্ষার্থীর নাম লিখুন" required>
+          </div>
+
+          <div class="form-group">
+            <label for="course">ক্লাস/কোর্স</label>
+            <input id="course" type="text" placeholder="যেমন: নবম শ্রেণি / ভর্তি কোচিং" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nidUpload">এনআইডি কার্ড (অভিভাবক হলে বাধ্যতামূলক)</label>
+            <input id="nidUpload" type="file" accept=".jpg,.jpeg,.png,.pdf">
+          </div>
+
+          <div class="form-group">
+            <label for="birthUpload">জন্ম নিবন্ধনের কপি (শিক্ষার্থী বা এনআইডি না থাকলে বাধ্যতামূলক)</label>
+            <input id="birthUpload" type="file" accept=".jpg,.jpeg,.png,.pdf">
+          </div>
+
+          <div class="form-group">
+            <label for="note">অতিরিক্ত তথ্য</label>
+            <textarea id="note" placeholder="বিশেষ নির্দেশনা বা প্রশ্ন লিখুন"></textarea>
+          </div>
+
+          <div id="admissionStatus" class="small-note" aria-live="polite"></div>
 
           <button class="btn btn-primary" type="submit">
-            <i class="fa-solid fa-paper-plane"></i> মেসেজ পাঠান
+            <i class="fa-solid fa-paper-plane"></i> ভর্তি আবেদন পাঠান
           </button>
 
           <div class="small-note">
-            ফরমটি ডেমো হিসেবে তৈরি – লাইভ করার সময় আপনি ব্যাকএন্ড (ইমেইল/ডাটাবেস) কানেক্ট করতে পারবেন।
+            বাধ্যতামূলক: আবেদনকারীর নাম, মোবাইল, শিক্ষার্থীর নাম, ক্লাস/কোর্স এবং আবেদনের ধরন। অভিভাবক হলে এনআইডি কার্ড সংযুক্ত করুন; না থাকলে জন্ম নিবন্ধনের কপি দিন। শিক্ষার্থী হিসেবে আবেদন করলে জন্ম নিবন্ধনের কপি সংযুক্ত করা আবশ্যক।
           </div>
         </form>
       </div>
@@ -1157,6 +1243,62 @@
 
   // Year
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Admission form validation & file requirements
+  const admissionForm = document.getElementById('admissionForm');
+  if (admissionForm) {
+    const applicantTypeInputs = admissionForm.querySelectorAll('input[name=\"applicant_type\"]');
+    const nidUpload = document.getElementById('nidUpload');
+    const birthUpload = document.getElementById('birthUpload');
+    const statusEl = document.getElementById('admissionStatus');
+
+    const syncRequirements = () => {
+      const type = admissionForm.querySelector('input[name=\"applicant_type\"]:checked').value;
+      if (type === 'guardian') {
+        nidUpload.required = true;
+        birthUpload.required = false;
+      } else {
+        nidUpload.required = false;
+        birthUpload.required = true;
+      }
+    };
+
+    applicantTypeInputs.forEach(input => input.addEventListener('change', syncRequirements));
+    syncRequirements();
+
+    admissionForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const type = admissionForm.querySelector('input[name=\"applicant_type\"]:checked').value;
+      const hasNid = nidUpload.files.length > 0;
+      const hasBirth = birthUpload.files.length > 0;
+      const messages = [];
+
+      if (!admissionForm.checkValidity()) {
+        admissionForm.reportValidity();
+        messages.push('বাধ্যতামূলক ঘরগুলো পূরণ করুন।');
+      }
+
+      if (type === 'guardian' && !hasNid && !hasBirth) {
+        messages.push('অভিভাবক হলে এনআইডি কার্ড না থাকলে জন্ম নিবন্ধনের কপি দিন।');
+      }
+
+      if (type === 'student' && !hasBirth) {
+        messages.push('শিক্ষার্থীর জন্ম নিবন্ধনের কপি বাধ্যতামূলক।');
+      }
+
+      if (messages.length) {
+        statusEl.textContent = messages.join(' ');
+        statusEl.style.color = '#d10000';
+        return;
+      }
+
+      statusEl.style.color = '#1c2455';
+      statusEl.textContent = 'আপনার ভর্তি আবেদন নথিভুক্ত হয়েছে। আমরা দ্রুত যোগাযোগ করব।';
+      admissionForm.reset();
+      syncRequirements();
+    });
+  }
 </script>
 
 </body>
